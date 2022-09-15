@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<body onload='document.form1.Email.focus()'>
+
+    <h2>Recommendation</h2>
+    <h4>Recommender Information</h4>
+
+    <form name="form1" action="#">
+        <label for="Prefix">Prefix</label><br>
+        <select id="Prefix" name="Prefix">
+            <option value="Dr.">Dr.</option>
+            <option value="Mr.">Mr.</option>
+            <option value="Ms.">Ms.</option>
+            <option value="Mrs.">Mrs.</option>
+        </select><br><br>
+        <label for="fname">First name</label><br>
+        <input type="text" id="fname" name="fname" value="Meenaksshi"><br><br>
+        <label for="lname">Last name</label><br>
+        <input type="text" id="lname" name="lname" value="S"><br><br>
+        <label for="Organization">Organization</label><br>
+        <input type="text" id="Organization" name="Organization" value="Amrita Vishwa Vidyapeetham"><br><br>
+        <label for="Title">Title</label><br>
+        <input type="text" id="Title" name="Title" value="Student"><br><br>
+        <label for="Relationship">Relationship to Student</label><br>
+        <input type="text" id="Relationship" name="Relationship" value="Student"><br><br>
+        <label for="Telephone">Telephone</label><br>
+        <input type="text" id="Telephone" name="Telephone" value="9876543210"><br><br>
+        <label for="Email">Email</label><br>
+        <input type="email" id="Email" name="Email" value="example@gmail.com"><br><br>
+
+        <label for="admit">Would you admit the applicant in your department?</label><br>
+        <input type="radio" id="Assuredly" name="admit" value="Assuredly">
+        <label for="Assuredly">Assuredly</label><br>
+        <input type="radio" id="Probably" name="admit" value="Probably">
+        <label for="Probably">Probably</label><br>
+        <input type="radio" id="Possibly" name="admit" value="Possibly">
+        <label for="Possibly">Possibly</label><br>
+        <input type="radio" id="No" name="admit" value="No">
+        <label for="No">No</label><br>
+
+        <input type="submit" value="Submit" onclick="ValidateEmail(document.form1.Email)">
+        <input type="submit" value="Save for Later">
+        <input type="submit" value="Display">
+
+
+    </form>
+
+    <script src="Q2.js"></script>
+
+</body>
+
+</html>
